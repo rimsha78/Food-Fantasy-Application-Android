@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_img">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            app:cardCornerRadius="64dp"
+            android:id="@+id/cv"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="120dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:id="@+id/img_dish"
+                android:src="@drawable/upload_img"
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/upload_dishe_pic"
+            android:layout_below="@+id/cv"
+            android:layout_width="184dp"
+            android:layout_height="47dp"
+            android:text="Upload Dish"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_title"
+            android:text="Title"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_below="@+id/upload_dishe_pic"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_of_dish"
+            android:layout_below="@+id/text_title"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Enter Title Here"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dish_description"
+            android:text="Description"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_below="@+id/title_of_dish"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dish_description_text"
+            android:layout_below="@+id/dish_description"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Enter Descriotion Here"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dish_price"
+            android:text="Price"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_below="@+id/dish_description_text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dish_price_text"
+            android:layout_below="@+id/dish_price"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Enter Price Here"
+
+            />
+        <Button
+            android:id="@+id/dish_add"
+            android:layout_below="@+id/dish_price_text"
+            android:layout_width="184dp"
+            android:layout_height="47dp"
+            android:background="#FF6318"
+            android:text="Add Dish"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <ProgressBar
+            android:id="@+id/loader_add_dish"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="93dp"
+            android:layout_above="@+id/dish_add"
+            android:layout_below="@+id/upload_dishe_pic"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="158dp"
+            android:layout_marginLeft="158dp"
+            android:layout_marginTop="128dp"
+            android:layout_marginEnd="154dp"
+            android:layout_marginRight="154dp"
+            android:layout_marginBottom="105dp" />
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
